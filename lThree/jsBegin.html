@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<button type="button" onclick="cB()" >Change Me</button>
+<button type="button" onclick="cB2()"> Change Me 2</button>
+<button type="button" onclick="cB3()">Change to Original</button>
+<H1 id="myTxt">Hello from H1</H1>
+    <script>
+        var myTxt=document.getElementById("myTxt");
+        function cB() {
+        console.log("..............changing.................One")
+            myTxt.innerHTML="Change by Button One";
+        }
+        function cB2() {
+            console.log("..............changing.................Two")
+            myTxt.innerHTML="Change By Button Two";
+        }
+        function cB3() {
+            console.log("..............changing.................Three")
+            myTxt.innerHTML=myTxt.value;
+        }
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+.container{
+    width:400px;
+    background-color:lightsteelblue;
+    margin:20px auto;
+}
+
+.container h1{
+    color: darkblue;
+    text-align: center;
+    background-color: lightgrey;
+    padding: 5px;
+}
+
+.container label{
+    color: midnightblue;
+}
+
+.container .form_group{
+    margin-bottom: 20px;
+}
+
+.container form{
+    margin:20px;
+}
+
+.container input[type=text],input[type=email],input[type=password]{
+    height: 30px;
+    width:345px;
+    border-radius: 20px;
+    padding-left:10px ;
+}
+
+.container input[type=text]:focus , input[type=email]:focus , input[type=password]:focus{
+    background-color: lightpink;
+    color: #000;
+
+}
+
+.container button[type=submit],button[type=reset]{
+    background: darkblue;
+    width:150px;
+    height:40px;
+    color:lightgrey;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left:20px;
+    cursor: pointer;
+}

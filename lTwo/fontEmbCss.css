@@ -1,0 +1,26 @@
+@font-face {
+    font-family:myUnicode ;
+    src:url("mm3.ttf")
+}
+
+@font-face {
+    font-family: myZg;
+    src:url("zg.ttf")
+}
+
+.container{
+    font-family:myUnicode;
+    width:400px;
+    background:lightgreen;
+    margin:20px auto;
+}
+
+.container h1{
+    background: darkblue;
+    text-align: center;
+}
+
+.container p{
+    text-align: justify;
+    margin:20px;
+}

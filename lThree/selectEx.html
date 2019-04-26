@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Option</title>
+</head>
+<body>
+<select id="mySelect"></select>
+
+
+<script>
+    var week=['Sun', 'Mon','Tues', 'Wed', 'Thu', 'Fri', 'Sat'];
+    var data="",i=0,len=week.length;
+    for(i;i<len;i++){
+        data+="<option>"+week[i]+"</option>";
+    }
+
+    var mySelect=document.getElementById("mySelect");
+    mySelect.innerHTML=data;
+    mySelect.style.color="blue";
+    var myOp=document.getElementById('myOp');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery Exercise</title>
+</head>
+<body>
+<h1 id="MyText"></h1>
+<h2></h2>
+<h3 class="newClass"></h3>
+
+
+<script src="jquery.js"></script>
+
+<script>
+    $("#MyText").html("Hello from id Selector");
+
+    var h1=$("#MyText");
+    h1.css({
+        color:"pink",
+        background:"green",
+        textAlign:"right",
+        margin:"60px",
+        padding:"10px"
+    });
+
+    var h2=$("h2");
+    h2.html("Hello from element Selector ");
+
+    var h3=$(".newClass");
+    h3.html("Hello from class selector");
+
+
+    h2.css({
+        color:"blue",
+        background:"black",
+        textAlign:"center",
+        padding:"30px",
+        cursor:"pointer"
+    });
+
+    h3.css({
+        color:"white",
+        background:"darkblue",
+        margin:"50px",
+        padding:"10px"
+    });
+
+</script>
+
+</body>
+</html>
+

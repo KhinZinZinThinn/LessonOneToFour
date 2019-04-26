@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Circle and Buttons</title>
+</head>
+<body>7
+
+<button type="button" id="hide">Hide Circle</button>
+<button type="button" id="show">Show Circle</button>
+<button type="button" id="toggle">Toggle Circle</button>
+<div id="circle">Welcome</div>
+
+<script src="jquery.js"></script>
+
+<script>
+    var circle=$("#circle");
+    circle.css({
+        width:"400px",
+        height:"400px",
+        borderRadius:"400px",
+        background:"blue",
+        color:"black",
+        textAlign:"center",
+        lineHeight:"400px",
+        margin:"30px",
+        fontSize:"50px"
+    });
+
+    var btnHide=$("#hide");
+    btnHide.click(function () {
+        circle.hide("1000");
+        //circle.fadeOut("slow");
+    });
+
+    var btnShow=$("#show");
+    btnShow.click(function () {
+        //circle.show("slow");
+        circle.fadeIn("fast");
+    });
+
+    var btnToggle=$("#toggle");
+    btnToggle.click(function () {
+      //  circle.toggle("slow");
+        circle.fadeToggle("slow");
+    })
+
+
+</script>
+</body>
+</html>

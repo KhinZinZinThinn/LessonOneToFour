@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="showText">Show Text here</h1>
+<input type="text" id="name"  placeholder="Enter your Name">
+<button type="button" onclick="showName()">Click here</button>
+<hr>
+<h1 id="showText2">Show Text 2 here</h1>
+<input type="text" onchange="showName2()" id="nameTwo" placeholder="Enter Your Name" >
+<script>
+    function showName() {
+        console.log("function is working...");
+        var name=document.getElementById("name").value;
+        var showText=document.getElementById("showText");
+        showText.innerHTML=name;
+    }
+
+    function showName2() {
+        console.log("fun showName2 is working");
+        var name2=document.getElementById("nameTwo").value;
+        var showText2=document.getElementById("showText2");
+        showText2.innerHTML=name2;
+        console.log(name2);
+    }
+</script>
+
+</body>
+</html>
